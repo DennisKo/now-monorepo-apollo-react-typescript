@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "name": "apollo-zeit2",
+  "regions": ["bru"],
+  "builds": [{ "src": "api/index.ts", "use": "@now/node@canary" }],
+  "routes": [{ "src": "/api", "methods": ["POST"], "dest": "api/index.ts" }]
+}
